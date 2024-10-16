@@ -1,0 +1,87 @@
+{# Esto permite cargar las reglas CSS desde el archivo style.css #}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Music App</h1>
+        </header>
+        <nav>
+            <h4>Menú</h4>
+            <ul>
+                <li class="menu"><a href="">Artistas</a></li>
+                <li class="menu"><a href="">Álbumes</a></li>
+                <li class="menu"><a href="">Conciertos</a></li>
+                <li class="menu"><a href="">Videos</a></li>
+            </ul>
+        </nav>
+        <section class="sec1">
+            <h2>Artistas</h2>
+            <ol>
+                <li class="element">Incubus</li>
+                <li class="element">Nirvana</li>
+                <li class="element">Alice in chain</li>
+                <li class="element">Soundgarden</li>
+                <li class="element">Primus</li>
+                <li class="element">Pixies</li>
+                <li class="element">Pearl Jam</li>
+                <li class="element">Beasty Boy</li>
+                <li class="element">Sonic Youth</li>
+                <li class="element">Sepultura</li>
+            </ol>
+        </section>
+        <section class="sec2">
+            <h2>Álbumes</h2>
+            <table>
+                <tr>
+                    <th>Artista</th>
+                    <th>Álbum</th>
+                    <th>Año</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Incubus</td>
+                    <td>Fungus Amongus</td>
+                    <td>1995</td>
+                </tr>
+                <tr>
+                    <td>Make Yourself</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>Morning View</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Nirvana</td>
+                    <td>Blech</td>
+                    <td>1989</td>
+                </tr>
+                <tr>
+                    <td>Nevermind</td>
+                    <td>1991</td>
+                </tr>
+                <tr>
+                    <td>Incesticide</td>
+                    <td>1992</td>
+                </tr>
+            </table>
+        </section>
+        <footer>
+            Copiright &copy Python y la Web, 2024. Más información <a href="">en la página de Clase Ejecutiva.</a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>>
